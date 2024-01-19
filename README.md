@@ -42,11 +42,11 @@ pip install -r requirements.txt
 ```
 Train the model:
 ```
-python src/training/train.py
+python src/train.py
 ```
 Test the inference:
 ```
-python src/infer/predict.py
+python src/infer.py
 ```
 Serve the model:
 ```bash ./entrypoint.sh```
