@@ -18,10 +18,10 @@ class Response(BaseModel):
 
 @app.post("/predict_topic", response_model=Response)
 async def predict_topic(request: Request) -> Response:
-    """Endpoint for predictions using the fine tuned BERTopic model"""
+    """Endpoint for predictions using the fine-tuned BERTopic model"""
 
     try:
-        result = predict(request.text)  # make sure to use request.text, not Request.text
+        result = predict(request.text)  
         return Response(
             topic=result["predicted_topic"], confidence=result["confidence"]
         )
@@ -39,7 +39,7 @@ interface = gr.Interface(
     fn=gradio_predict,
     inputs=gr.Textbox(
         label="Enter Your Text",
-        placeholder="Enter an open-ended question to find its topic",
+        placeholder="Enter an open-ended answer to find its topic",
     ),
     outputs=[gr.Textbox(label="Predicted Topic"), gr.Number(label="Confidence Score")],
     allow_flagging="never",
