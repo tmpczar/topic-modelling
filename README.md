@@ -26,13 +26,19 @@ topic-modelling
 ## Build instructions
 
 ### Build with Docker (recommended) 
-Given you have Docker installed on your system, build the image with:</br>```docker build -t topic_modelling .``` 
+Given you have Docker installed on your system, build the image with:</br>
+```
+docker build -t topic_modelling .
+``` 
 (May take several minutes)
 
-<i>Caveat</i>: If you are on a M1/M2 Mac, add the following flag to the above command: </br>```--platform linux/arm64/v8```
+<i>Caveat</i>: If you are on a M1/M2 Mac, add the following flag to the above command: </br>
+```--platform linux/arm64/v8```
 
 Run the container with:
-```docker run -e PORT=8000 -p 8000:8000 topic_modelling```
+```
+docker run -e PORT=8000 -p 8000:8000 topic_modelling
+```
 ### Build with conda (alternative)
 Given you have anaconda installed on your system, build, create a virtual environment and install the dependencies:
 ```
