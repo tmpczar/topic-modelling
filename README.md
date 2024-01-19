@@ -49,7 +49,9 @@ Test the inference:
 python src/infer.py
 ```
 Serve the model:
-```bash ./entrypoint.sh```
+```
+bash ./entrypoint.sh
+```
 
 ## Communicate with API, access the UI
 
