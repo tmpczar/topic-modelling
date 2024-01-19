@@ -1,0 +1,4 @@
+notebooks
+*.ipynb
+**/__pycache__/
+*.pdf

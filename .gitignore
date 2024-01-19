@@ -1,0 +1,8 @@
+*.ipynb
+*/notebooks/*
+*.pdf
+**/__pycache__/*
+*.pyc
+*.json
+*.pt
+*.safetensors
